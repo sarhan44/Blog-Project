@@ -1,0 +1,29 @@
+{
+  "name": "blog-project",
+  "version": "1.0.0",
+  "description": "Backend of blog project which perform all crud operations with user login or registration , authentication &amp; authorisation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " npx nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarhan44/Blog-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarhan44/Blog-Project/issues"
+  },
+  "homepage": "https://github.com/sarhan44/Blog-Project#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.0",
+    "nodemon": "^2.0.16"
+  }
+}
