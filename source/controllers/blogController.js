@@ -105,41 +105,6 @@ const updateblogs = async function (req, res) {
   }
 };
 
-// let updateblogs = async (req, res) => {
-//   try {
-//     let blogsId = req.params.blogId;
-
-//     // -----------------check blog id is valid or not
-//     let blogData = await blogModel.findById(blogsId);
-//     if (!blogData) return res.status(404).send("Invalid blog Id");
-
-//     // ------------check isDeleted = false
-//     if (blogData.isDeleted === true)
-//       return res
-//         .status(400)
-//         .send({ status: false, msg: "blog is not Avilable" });
-
-//     let data = req.body;
-
-//     if (!isValidBody(data)) return res.status(400).send({ status: false, msg: "please provide data to update" })
-
-//     let updatedBlog = await blogModel.findOneAndUpdate(
-//        blogsId ,
-//       {$push:{data}}, 
-//       {new: true,}
-//       );
-
-//     if (updatedBlog.isPublished == false) {
-//       res.status(200).send({ status: true, data: updatedBlog });
-//     } else {
-//       updatedBlog.publishedAt = Date();
-//       res.status(200).send({ status: true, data: updatedBlog });
-//     }
-//   } catch (err) {
-//     res.status(500).send({ status: false, msg: err.message });
-//   }
-// };
-
 // ==+==+==+==+==+==+==+==+==+==[ Delete Blogs By Id ]==+==+==+==+==+==+==+==+==+==
 
 let deleteBlog = async (req, res) => {
