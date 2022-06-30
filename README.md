@@ -21,11 +21,8 @@ A user who wants to delete his blog so he is able to delete, And he can also del
 
 
 
-# Requierments : 
-NodeJs, Express, JavaScript
-# Packedges:
-Express, Body Parser, Mongoose, Jsonwebtoken(JWT), Nodemon
-# Tools
-Postman, VsCode
-# DataBase
-MongoDb
+# Requierments  
+ Source :-  NodeJs, Express, JavaScript
+ Packages:- Express, Body Parser, Mongoose, Jsonwebtoken(JWT), Nodemon
+ Tools:- Postman, VsCode
+ DataBase:-  MongoDb
